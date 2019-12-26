@@ -1,0 +1,15 @@
+
+spring:
+  application:
+    name: list-customer-1
+
+info:
+  auth: list
+  app.name: customer1
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8090/eureka/
+server:
+  port: 8010

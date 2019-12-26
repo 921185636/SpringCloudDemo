@@ -1,0 +1,20 @@
+server:
+  port: 8012
+
+spring:
+  application:
+    name: list-cusstomer-3-zuul
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8090/eureka/
+
+zuul:
+  routes:
+    api-a:
+      path: /api-a/**
+      service-id: list-customer-1
+    api-b:
+      path: /api-b/**
+      service-id: list-customer-2-feign

@@ -1,0 +1,13 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: list-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/lstsdbd/tiger-s-resp.git  #配置git仓库地址，后面的.git可有可无
+          username:  lstsdbd #访问git仓库的用户名
+          password:  li@song+1996 #访问git仓库的用户密码

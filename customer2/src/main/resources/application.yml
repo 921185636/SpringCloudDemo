@@ -1,0 +1,18 @@
+
+spring:
+  application:
+    name: list-customer-2-feign
+
+info:
+  auth: list
+  app.name: customer2
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8090/eureka/
+server:
+  port: 8011
+feign:
+  hystrix:
+    enabled: true

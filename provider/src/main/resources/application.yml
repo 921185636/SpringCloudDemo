@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: list-provider-1
+
+info:
+  auth: list
+  app.name: provider1
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8090/eureka
+
+
+
