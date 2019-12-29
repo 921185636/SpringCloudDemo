@@ -1,2 +1,3 @@
 # SpringCloudDemo
-springcloud练手用
+技术栈：Spring，SpringMVC，SpringCloud
+
