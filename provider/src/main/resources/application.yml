@@ -20,6 +20,12 @@ spring:
     timeout: 30000
      #默认是索引为0的数据库
     database: 0
+  kafka:
+    bootstrap-servers: 114.55.66.218:9092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+
 
 info:
   auth: list

@@ -2,7 +2,13 @@
 spring:
   application:
     name: list-customer-2-feign
-
+  kafka:
+     bootstrap-servers: 114.55.66.218:9092
+     consumer:
+       group-id: group0
+       key-serializer: org.apache.kafka.common.serialization.StringSerializer
+       value-serializer: org.apache.kafka.common.serialization.StringSerializer
+       enable-auto-commit: false #关闭自动提交offset
 info:
   auth: list
   app.name: customer2
