@@ -1,6 +1,3 @@
-spring:
-  application:
-    name: list-provider-1
 
 info:
   auth: list
@@ -10,6 +7,26 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8090/eureka
+spring:
+  application:
+    name: list-provider-1
+  datasource:
+    url: jdbc:mysql://114.55.66.218:3306/mindao-crm?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: 123456
+    #连接池配置信息
+    initialSize: 10
+    minIdle: 10
+    maxActive: 100
+    maxWait: 60000
+    timeBetweenEvictionRunsMillis: 60000
+    minEvictableIdleTimeMillis: 300000
+    validationQuery: SELECT 1 FROM DUAL
+    testWhileIdle: true
+    testOnBorrow: false
+    testOnReturn: false
+    poolPreparedStatements: true
+    maxPoolPreparedStatementPerConnectionSize: 20
 
 
 
