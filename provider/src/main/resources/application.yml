@@ -25,6 +25,13 @@ spring:
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
+  rabbitmq:
+    host: 114.55.66.218
+    port: 5672
+    username: root
+    password: root
+    publisher-returns: true # 开启returnedMessage回调 Exchange -> Queue
+    publisher-confirms: true # 开启confirms回调 P -> Exchange
 
 
 info:

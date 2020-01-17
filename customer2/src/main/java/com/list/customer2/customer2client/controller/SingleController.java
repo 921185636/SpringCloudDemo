@@ -1,6 +1,7 @@
 package com.list.customer2.customer2client.controller;
 
 import com.list.customer2.customer2client.callable.SingleCallable;
+import com.list.customer2.customer2client.entity.MyAnnotation;
 import com.list.customer2.customer2client.service.SingleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -44,5 +45,10 @@ public class SingleController{
             result.append((String) future.get());
         }
         return result.toString();
+    }
+    @MyAnnotation
+    @RequestMapping("testAop")
+    public String testaop(String a){
+        return a+"1";
     }
 }

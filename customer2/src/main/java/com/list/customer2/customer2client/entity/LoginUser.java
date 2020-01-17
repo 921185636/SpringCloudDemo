@@ -1,4 +1,4 @@
-package com.list.provider.providerclient.entity;
+package com.list.customer2.customer2client.entity;
 
 import lombok.Data;
 
